@@ -1,0 +1,62 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo o tamanho da tela */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0 auto; /* Centralizar horizontalmente */
+  height: 100vh; /* Definir altura em relação à viewport */
+  background-color: #f7fafc;
+}
+a {
+  text-decoration: none;
+}
+
+/* animar menu mobile */
+.activeMenuMobile {
+  transition: 0.3s;
+  transform: initial !important;
+  opacity: 1 !important;
+  pointer-events: initial !important;
+}
+
+.menuMobileButtonActive {
+  outline: none;
+  background-color: #fff;
+  border-color: #1a80e5;
+  color: #1a80e5;
+}
+
+.aniamteLeft {
+  transform: translateX(-20px);
+  animation: animateLeft 0.5s forwards;
+  /* margin-top: 20vh; */
+}
+@keyframes animateLeft {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+  100% {
+    transform: inherit;
+  }
+}
+
+.qrCode {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
