@@ -14,7 +14,7 @@ export const HeaderStyles = styled.div`
   border-bottom: 1px solid #ccc;
   .logo {
     display: flex;
-
+    align-items: center;
     gap: 8px;
     img {
       width: 40px;
